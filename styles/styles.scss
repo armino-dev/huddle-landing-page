@@ -1,0 +1,176 @@
+/*
+# Front-end Style Guide
+## Layout
+The designs were created to the following widths:
+- Mobile: 375px
+- Desktop: 1440px
+## Colors
+### Primary
+- Pink: hsl(322, 100%, 66%)
+### Neutral
+- Very Dark Cyan: hsl(192, 100%, 9%)
+- Very Pale Blue: hsl(207, 100%, 98%)
+## Typography
+### Headings
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 700
+### Body
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400, 600, 700
+## Icons
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+- [Font Awesome](https://fontawesome.com/)
+- [IcoMoon](https://icomoon.io/)
+- [Ionicons](https://ionicons.com/)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+// colors
+
+$pink: hsl(322, 100%, 66%);
+$cyan-very-dark: hsl(192, 100%, 9%);
+$blue-very-pale: hsl(207, 100%, 98%);
+$blue-grey: rgb(137, 150, 160);
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;    
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 25px;
+    h1 {
+        display: flex;        
+    }    
+    #logo {
+        height: 16px;
+    }
+}
+
+a.btn {
+    text-decoration: none;
+    border-radius: 20px;
+    border: 1px solid $pink;
+    padding: 5px 20px;
+    font-size: 10px;
+    &.btn-outline {        
+        color: $pink;                   
+    }
+    &.btn-normal {
+        color: white;
+        background-color: $pink;
+        font-weight: 600;
+        padding: 10px 45px;
+        font-size: 12px;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $cyan-very-dark;
+    h1 {
+        font-size: 23px;
+        width: 100%;
+        padding: 0 40px;
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 20px;
+        line-height: 40px;
+    }
+    p {
+        padding: 0 40px;
+        text-align: center;
+        margin-bottom: 50px;
+        line-height: 20px;
+    }
+    .btn {
+        margin-bottom: 100px;        
+    }
+
+    .screen-mockups {
+        padding: 0 40px;
+        img {
+            width: 100%;
+        }        
+    }
+
+    .card {
+        margin-top: 100px;
+        img {
+            width: 28px;
+        }
+        .stats {
+            font-size: 50px;
+            font-weight: 700;
+
+        }
+        .text {
+            width: 100%;
+            text-align: center;
+            color: $blue-grey;
+        }
+    }
+
+    .top-section-1 {        
+        margin-top: 150px;
+        padding: 100px 30px 30px 30px;        
+        position: relative;
+        background: $blue-very-pale;
+        img {
+            width: 255px;
+            margin-bottom: 80px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        &:before, &:after {
+            position: absolute;
+        }
+        &:before {
+            content: "";
+            height: 100px;
+            width: 100%;
+            top: -100px;
+            left: 0;
+            background: url(/images/bg-section-top-mobile-1.svg) no-repeat bottom center;
+            background-size: cover;
+        }
+        &:after {
+            content: "";
+            height: 100px;
+            width: 100%;
+            bottom: -100px;
+            left: 0;
+            background: url(/images/bg-section-bottom-mobile-1.svg) no-repeat top center;
+        }
+        p {
+            padding: 0;
+        }
+    }
+}

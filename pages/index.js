@@ -1,4 +1,7 @@
 import Head from 'next/head'
+import Footer from '../components/footer'
+import Header from '../components/header'
+import Card from '../components/card'
 
 export default function Home() {
   return (
@@ -8,25 +11,26 @@ export default function Home() {
         <title>Frontend Mentor | Huddle Landing Page</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-      Try it free
-
-Build The Community Your Fans Will Love
-
-Huddle re-imagines the way we build communities. You have a voice, but so does 
-your audience. Create connections with your users as you engage in genuine discussion. 
-
-Get Started For Free
-
-1.4k+
-Communities Formed
-
-2.7m+
-Messages Sent
-
-Grow Together
-Generate meaningful discussions with your audience and build a strong, loyal community. 
-Think of the insightful conversations you miss out on with a feedback form. 
+      <Header />
+      <main>   
+        <h1>Build The Community Your Fans Will Love</h1>
+        <p>Huddle re-imagines the way we build communities. You have a voice, but so does 
+your audience. Create connections with your users as you engage in genuine discussion.</p>
+        <a href="#" className="btn btn-normal">Get Started For Free</a>
+        <div className="container screen-mockups">
+          <img src="/images/screen-mockups.svg" alt="Screen mockups" />
+        </div>
+        <div className="container">
+          <Card logo="/images/icon-communities.svg" stats="1.4k+" text="Communities Formed" />
+          <Card logo="/images/icon-messages.svg" stats="2.7m+" text="Messages Sent" />
+        </div>
+        <div className="container top-section-1">
+          <img src="/images/illustration-grow-together.svg" alt="Grow Together Illustration" />
+          <h2>Grow Together</h2>
+          <p>Generate meaningful discussions with your audience and build a strong, loyal community. 
+            Think of the insightful conversations you miss out on with a feedback form. 
+          </p>
+        </div>
 
 Flowing Conversations
 You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
