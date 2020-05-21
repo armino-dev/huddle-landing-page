@@ -7,7 +7,7 @@ export default class Header extends React.Component {
         return (
             <header>
                 <h1><img id="logo" src="/images/logo.svg" alt="Huddle Logo" /></h1>
-                <a href="#" className="btn btn-outline" id="btn-try-it-free">Try It Free</a>
+                <a href="#" className="btn btn-outline btn-rounded" id="btn-try-it-free">Try It Free</a>
             </header>
         )
     }

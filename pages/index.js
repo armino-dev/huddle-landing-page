@@ -16,7 +16,7 @@ export default function Home() {
         <h1>Build The Community Your Fans Will Love</h1>
         <p>Huddle re-imagines the way we build communities. You have a voice, but so does 
 your audience. Create connections with your users as you engage in genuine discussion.</p>
-        <a href="#" className="btn btn-normal">Get Started For Free</a>
+        <a href="#" className="btn btn-normal btn-rounded">Get Started For Free</a>
         <div className="container screen-mockups">
           <img src="/images/screen-mockups.svg" alt="Screen mockups" />
         </div>
@@ -31,32 +31,25 @@ your audience. Create connections with your users as you engage in genuine discu
             Think of the insightful conversations you miss out on with a feedback form. 
           </p>
         </div>
-
-Flowing Conversations
-You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
-just-in-time loading for a more natural flow.
-
-Your Users
-It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
-once signed in to your app, your users can start chatting immediately.
-
-Ready To Build Your Community?
-Get Started For Free
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
-vestibulum a, ultrices quis sem.
-
-Phone: +1-543-123-4567
-example@huddle.com
-
-Newsletter
-To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
-send you spam or pass on your email address
-
-Subscribe
+        <div className="container flowing-conversation">
+          <img src="/images/illustration-flowing-conversation.svg" alt="Flowing Conversation Illustration" />
+          <h2>Flowing Conversations</h2>
+          <p>You wouldn't paginate a conversation in real life, so why do it online? 
+            Our threads have just-in-time loading for a more natural flow.
+          </p>
+        </div>
+        <div className="container top-section-2">
+          <img src="/images/illustration-your-users.svg" alt="Your Users Illustration" />
+          <h2>Your Users</h2>
+          <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
+once signed in to your app, your users can start chatting immediately.</p>
+        </div>
+        <div className="container community">
+          <h2>Ready To Build Your Community?</h2>
+          <a href="#" className="btn btn-normal btn-rounded">Get Started For Free</a>
+        </div>
       </main>
-      <footer>        
-      </footer>
+      <Footer />
     </div>
   )
 }
