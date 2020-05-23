@@ -60,6 +60,25 @@ h2 {
     font-size: 19px;
 }
 
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;        
+    width: 100%;        
+}
+
+.w50 {
+    width: 100%;
+}
+
+.center {
+    align-items: center;        
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -94,7 +113,7 @@ a.btn, button.btn {
         border-radius: 20px;
     }
     &.btn-shadow {
-        box-shadow: 0px 0px 10px 10px rgba(30, 30, 30, .1);
+        box-shadow: 0px 5px 5px 5px rgba(30, 30, 30, .1);
     }
     &.btn-big {
         font-size: 16px;
@@ -103,14 +122,14 @@ a.btn, button.btn {
 
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
 }
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: $cyan-very-dark;
+    color: $cyan-very-dark;    
     h1 {
         font-size: 23px;
         width: 100%;
@@ -159,8 +178,9 @@ main {
         margin-top: 150px;
         margin-bottom: 200px;
         padding: 100px 30px 10px 30px;        
-        position: relative;
+        position: relative;        
         background: $blue-very-pale;
+        width: 100%;
         img {
             width: 255px;
             margin-bottom: 80px;
@@ -171,31 +191,29 @@ main {
         }
         &:before, &:after {
             position: absolute;
-        }
-        &:before {
+            padding:0;
             content: "";
-            height: 100px;
-            width: 100%;
-            top: -100px;
-            left: 0;
-            background: url(/images/bg-section-top-mobile-1.svg) no-repeat bottom center;
-            background-size: cover;
+            width:100%;                                        
         }
-        &:after {
-            content: "";
-            height: 80px;
-            width: 100%;
-            bottom: -80px;
-            left: 0;
-            background: url(/images/bg-section-bottom-mobile-1.svg) no-repeat top center;
+        &:before {            
+            height: 500px;            
+            top: -500px;            
+            background: url(/images/bg-section-top-mobile-1.svg) no-repeat bottom center;            
+            background-size: contain;
+        }
+        &:after {            
+            height: 200px;            
+            bottom: -200px;            
+            background: url(/images/bg-section-bottom-mobile-1.svg) no-repeat top center;            
+            background-size: contain;
         }
         p {
             padding: 0;
         }
     }
 
-    .flowing-conversation {
-        align-items: center;
+    .flowing-conversation {        
+        align-items: center;        
         img {
             width: 255px;
             margin-bottom: 100px;
@@ -209,35 +227,33 @@ main {
     }
 
     .top-section-2 {
-        align-items: center;
+        align-items: center;        
         position: relative;
         margin-top: 150px;
         margin-bottom: 180px;
         padding: 20px 30px 40px 30px;        
         background: $blue-very-pale;
+        width: 100%;
         img {
             width: 255px;
             margin-bottom: 70px;
         }
         &:before, &:after {
             position: absolute;
+            content: "";            
+            width:100%;            
         }
-        &:before {
-            content: "";
-            height: 100px;
-            width: 100%;
-            top: -100px;
-            left: 0;
-            background: url(/images/bg-section-top-mobile-2.svg) no-repeat bottom center;
-            background-size: cover;
+        &:before {            
+            height: 500px;            
+            top: -500px;            
+            background: url(/images/bg-section-top-mobile-2.svg) no-repeat bottom center;            
+            background-size: contain;
         }
-        &:after {
-            content: "";
-            height: 100px;
-            width: 100%;
-            bottom: -100px;
-            left: 0;
-            background: url(/images/bg-section-bottom-mobile-2.svg) no-repeat top center;
+        &:after {            
+            height: 200px;            
+            bottom: -200px;            
+            background: url(/images/bg-section-bottom-mobile-2.svg) no-repeat top center;            
+            background-size: contain;
         }
         h2 {
             margin-bottom: 20px;
@@ -271,11 +287,12 @@ footer {
     &:before {
         content: "";
         position: absolute;
-        height: 100px;
+        height: 300px;
         width: 100%;
-        top: -100px;
+        top: -300px;
         left: 0;
         background: url(/images/bg-footer-top-mobile.svg) no-repeat bottom center;
+        background-size: contain;
     }
     h2 {
         margin-bottom: 20px;
@@ -350,4 +367,122 @@ footer {
         }
     }
 
+}
+
+
+@media only screen and (min-width: 768px) {
+    header {
+        padding: 80px;        
+        #logo {
+            height: 36px;
+        }
+    }
+    
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .col {
+        display: flex;
+        flex-direction: column;        
+        width: 100%;        
+    }
+    
+    .w50 {
+        width: 50%;
+    }
+
+    a.btn, button.btn {
+        padding: 10px 30px;
+        font-size: 16px;
+        &.btn-normal {
+            color: white;
+            background-color: $pink;
+            font-weight: 600;
+            padding: 30px 100px;
+            font-size: 18px;            
+        }
+        &.btn-rounded {
+            border-radius: 100px;
+        }        
+        &.btn-big {
+            font-size: 16px;
+        }
+    }
+
+    main {
+        h1 {
+            font-size: 44px;
+            margin-top: 170px;
+        }
+        p {
+            max-width: 640px;
+            font-size: 19px;
+            line-height: 30px;
+        }
+        .top-section-1 {
+            .row {
+                flex-flow: row-reverse;
+            }
+            &:before {
+                background: url(/images/bg-section-top-desktop-1.svg) no-repeat bottom left;
+                background-size: contain;
+            }
+    
+            &:after {
+                background: url(/images/bg-section-bottom-desktop-1.svg) no-repeat top left;
+                background-size: contain;
+            }
+        }
+    
+        .top-section-2 {
+            .row {
+                flex-flow: row-reverse;
+            }
+            &:before {
+                background: url(/images/bg-section-top-desktop-2.svg) no-repeat bottom left;
+                background-size: contain;
+            }
+            &:after {
+                background: url(/images/bg-section-bottom-desktop-2.svg) no-repeat top left;
+                background-size: contain;
+            }
+        }
+    }
+    
+    footer {
+        padding: 280px 120px 25px 120px;
+        .row {
+            flex-flow: row-reverse;
+        }
+        &:before {            
+            background: url(/images/bg-footer-top-desktop.svg) no-repeat bottom left;
+            background-size: contain;            
+        }
+        img.logo {
+            width: 240px;
+            filter: grayscale(100) brightness(100);
+            margin-top: 0;
+        }
+        .container p {
+            max-width: 310px;
+        }
+        h2 {
+            font-size: 24px;            
+        }
+        form {
+            flex-direction: row;
+            align-items: center;
+            input[type=text], input[type=email] {
+                margin-right: 40px;
+                margin-bottom: 0;
+            }
+            button.btn.btn-normal {                
+                padding: 10px 45px;
+                
+                margin-top: 0;
+            }
+        }
+    }
 }
