@@ -32,10 +32,10 @@ your audience. Create connections with your users as you engage in genuine discu
         </div>
         <div className="container top-section-1">
           <div className="row">
-            <div className="col w50 center">
+            <div className="col w50 center flex-end">
               <img src="/images/illustration-grow-together.svg" alt="Grow Together Illustration" />
             </div>
-            <div className="col w50 center">
+            <div className="col w50 center flex-start">
               <h2>Grow Together</h2>
               <p>Generate meaningful discussions with your audience and build a strong, loyal community.
               Think of the insightful conversations you miss out on with a feedback form.
@@ -45,28 +45,30 @@ your audience. Create connections with your users as you engage in genuine discu
         </div>
         <div className="container flowing-conversation">
           <div className="row">
-            <div className="col w50 center">
+            <div className="col w50 center flex-start">
               <img src="/images/illustration-flowing-conversation.svg" alt="Flowing Conversation Illustration" />
             </div>
-            <div className="col w50 center">
-              <h2>Flowing Conversations</h2>
-              <p>You wouldn't paginate a conversation in real life, so why do it online?
-              Our threads have just-in-time loading for a more natural flow.
+            <div className="col w50 center flex-end">
+              <div className="col">
+                <h2>Flowing Conversations</h2>
+                <p>You wouldn't paginate a conversation in real life, so why do it online?
+                Our threads have just-in-time loading for a more natural flow.
           </p>
+              </div>
             </div>
           </div>
         </div>
         <div className="container top-section-2">
           <div className="row">
-            <div className="col w50 center">
-            <img src="/images/illustration-your-users.svg" alt="Your Users Illustration" />
+            <div className="col w50 center flex-end">
+              <img src="/images/illustration-your-users.svg" alt="Your Users Illustration" />
             </div>
-            <div className="col w50 center">
-            <h2>Your Users</h2>
-          <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means,
+            <div className="col w50 center flex-start">
+              <h2>Your Users</h2>
+              <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means,
 once signed in to your app, your users can start chatting immediately.</p>
             </div>
-          </div>          
+          </div>
         </div>
         <div className="container community">
           <h2>Ready To Build Your Community?</h2>

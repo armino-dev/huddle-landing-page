@@ -122,7 +122,8 @@ a.btn, button.btn {
 
 .container {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
+    width: 100%;
 }
 
 main {
@@ -378,19 +379,32 @@ footer {
         }
     }
     
+    .w350 {            
+        max-width: 400px;
+    }
+
     .row {
         display: flex;
         flex-direction: row;
+        width: 100%;
     }
     
     .col {
         display: flex;
         flex-direction: column;        
         width: 100%;        
+        &.w50 {
+            width: 50%;
+        }
     }
     
-    .w50 {
-        width: 50%;
+
+    .flex-start {
+        align-items: flex-start;
+    }
+
+    .flex-end {
+        align-items: flex-end;
     }
 
     a.btn, button.btn {
@@ -411,6 +425,8 @@ footer {
         }
     }
 
+    
+
     main {
         h1 {
             font-size: 44px;
@@ -421,10 +437,56 @@ footer {
             font-size: 19px;
             line-height: 30px;
         }
-        .top-section-1 {
-            .row {
-                flex-flow: row-reverse;
+
+        .card {
+            margin-top: 100px;
+            img {
+                width: 50px;
             }
+            .stats {
+                font-size: 96px;
+                font-weight: 700;
+    
+            }
+            .text {
+                width: 100%;
+                font-size: 22px;
+                text-align: center;
+                color: $blue-grey;
+            }
+        }
+
+        .top-section-1, .flowing-conversation, .top-section-2, .community {
+            margin-top: 280px;            
+            padding-left: 130px;
+            padding-right: 130px;
+            .row {
+                align-items: center;   
+                justify-content: space-between;
+            }
+            img {
+                max-width: 540px;
+                width: 100%;
+            }
+            h2 {
+                font-size: 38px;
+                text-align: start;
+                max-width: 540px;
+            }  
+            p {
+                text-align: start;
+                font-size: 16px;
+                line-height: 24px;
+                max-width: 500px;
+                padding-left: 0;
+            }
+        }
+
+        .top-section-1 {            
+            .row {
+                flex-flow: row-reverse;                          
+            }            
+            
             &:before {
                 background: url(/images/bg-section-top-desktop-1.svg) no-repeat bottom left;
                 background-size: contain;
@@ -440,6 +502,7 @@ footer {
             .row {
                 flex-flow: row-reverse;
             }
+            
             &:before {
                 background: url(/images/bg-section-top-desktop-2.svg) no-repeat bottom left;
                 background-size: contain;
@@ -449,10 +512,17 @@ footer {
                 background-size: contain;
             }
         }
+
+        .community {
+            h2 {
+                max-width: 1440px;
+            }
+
+        }
     }
     
     footer {
-        padding: 280px 120px 25px 120px;
+        padding: 130px 120px 25px 120px;
         .row {
             flex-flow: row-reverse;
         }
@@ -471,6 +541,9 @@ footer {
         h2 {
             font-size: 24px;            
         }
+
+        
+
         form {
             flex-direction: row;
             align-items: center;

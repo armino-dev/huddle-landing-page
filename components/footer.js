@@ -9,7 +9,7 @@ export default class Footer extends React.Component {
                 <div className="row">
                     <div className="col">
                         <h2>NEWSLETTER</h2>
-                        <p>To receive tips on how to grow your community, sign up to our weekly newsletter.
+                        <p className="w350">To receive tips on how to grow your community, sign up to our weekly newsletter.
                     <br />We’ll never send you spam or pass on your email address.
                     </p>
                         <form>
