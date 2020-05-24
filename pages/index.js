@@ -49,12 +49,12 @@ your audience. Create connections with your users as you engage in genuine discu
               <img src="/images/illustration-flowing-conversation.svg" alt="Flowing Conversation Illustration" />
             </div>
             <div className="col w50 center flex-end">
-              <div className="col">
+              
                 <h2>Flowing Conversations</h2>
                 <p>You wouldn't paginate a conversation in real life, so why do it online?
-                Our threads have just-in-time loading for a more natural flow.
-          </p>
-              </div>
+                  Our threads have just-in-time loading for a more natural flow.
+                </p>
+              
             </div>
           </div>
         </div>
