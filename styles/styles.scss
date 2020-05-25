@@ -437,9 +437,11 @@ footer {
             font-size: 19px;
             line-height: 30px;
         }
-
+        .screen-mockups {
+            padding: 0 212px;            
+        }
         .card {
-            margin-top: 100px;
+            margin-top: 125px;
             img {
                 width: 50px;
             }
@@ -456,8 +458,7 @@ footer {
             }
         }
 
-        .top-section-1, .flowing-conversation, .top-section-2, .community {
-            margin-top: 280px;            
+        .top-section-1, .flowing-conversation, .top-section-2, .community {                   
             padding-left: 130px;
             padding-right: 130px;
             .row {
@@ -482,7 +483,8 @@ footer {
             }
         }
 
-        .top-section-1 {            
+        .top-section-1 {
+            margin-top: 280px;
             .row {
                 flex-flow: row-reverse;                          
             }            
@@ -496,6 +498,10 @@ footer {
                 background: url(/images/bg-section-bottom-desktop-1.svg) no-repeat top left;
                 background-size: contain;
             }
+        }
+
+        .flowing-conversation {
+            margin-top: 140px;
         }
     
         .top-section-2 {
@@ -514,6 +520,7 @@ footer {
         }
 
         .community {
+            margin-top: 100px;
             h2 {
                 max-width: 1440px;
             }
@@ -522,7 +529,8 @@ footer {
     }
     
     footer {
-        padding: 130px 120px 25px 120px;
+        padding: 100px 120px 25px 120px;
+        margin-top: 60px;
         .row {
             flex-flow: row-reverse;
         }
@@ -534,15 +542,20 @@ footer {
             width: 240px;
             filter: grayscale(100) brightness(100);
             margin-top: 0;
+            margin-bottom: 30px;
         }
         .container p {
-            max-width: 310px;
+            max-width: 310px;                        
         }
         h2 {
             font-size: 24px;            
         }
-
-        
+        .social-media {
+            margin-top: 50px;
+        }
+        ul {
+            margin-top: 0;
+        }
 
         form {
             flex-direction: row;
