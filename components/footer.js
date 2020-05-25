@@ -13,7 +13,7 @@ export default class Footer extends React.Component {
                     <br />We’ll never send you spam or pass on your email address.
                     </p>
                         <form>
-                            <input type="email" name="email" id="email" />
+                            <input type="email" name="email" id="email" aria-label="email" />
                             <button className="btn btn-normal btn-big">Subscribe</button>
                         </form>
                     </div>
